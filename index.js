@@ -43,7 +43,7 @@ app.post('/convert', async (req, res) => {
         
         })
         ).then( () => {
-            res.json(conversion);
+            res.json({"conversions": conversion});
         }).catch( (err)=>{
             console.log(err);
         })
